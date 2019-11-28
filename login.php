@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include 'config/databases.php';
+include 'config/database.php';
 
 if (isset($_POST['btnlogin'])) {
     $db = new Database();

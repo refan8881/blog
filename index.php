@@ -5,8 +5,8 @@ if (!$_SESSION['login']) {
     alert('maaf anda harus login terlebih dahulu!');
     </script>";
 }else {
-    include('../config/databases.php');
-    $user = new Database();
+    include('../../config/databases.php');
+    $user = new Databases();
     $user = mysqli_query($user->koneksi,
         "select * from users where password='$_SESSION[login]'");
         //var_dump($_SESSION['login']);
